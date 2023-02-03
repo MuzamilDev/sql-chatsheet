@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Commands</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(75, 42, 165);
+        }
+        
+        .text-effect {
+            font-family: tahoma;
+            font-size: 150px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: capitalize;
+            margin: 10px auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .text-effect span {
+            color: rgb(247, 247, 8);
+            display: inline-block;
+            opacity: 0;
+            transform: rotate(120deg);
+            transform-origin: bottom center;
+            animation: animate 1s infinite linear;
+        }
+        
+        .text-effect span:nth-child(2) {
+            animation-delay: 0.0s;
+        }
+        
+        .text-effect span:nth-child(3) {
+            animation-delay: 0.1s;
+        }
+        
+        .text-effect span:nth-child(4) {
+            animation-delay: 0.15s;
+        }
+        
+        .text-effect span:nth-child(5) {
+            animation-delay: 0.2s;
+        }
+        
+        .text-effect span:nth-child(6) {
+            animation-delay: 0.25s;
+        }
+        
+        .text-effect span:nth-child(7) {
+            animation-delay: 0.3s;
+        }
+        
+        .text-effect span:nth-child(8) {
+            animation-delay: 0.35s;
+        }
+        
+        .text-effect span:nth-child(9) {
+            animation-delay: 0.4s;
+        }
+        
+        .text-effect span:nth-child(10) {
+            animation-delay: 0.45s;
+        }
+        
+        .text-effect span:nth-child(11) {
+            animation-delay: 0.5s;
+        }
+        
+        .text-effect:hover span {
+            opacity: 1;
+            transform: rotate(0);
+        }
+        
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotate(150deg);
+            }
+            50% {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+        }
+        
+        .heading {
+            width: 50%;
+            color: rgb(9, 255, 0);
+            font-size: 40px;
+            background-color: rgb(243, 239, 233);
+            text-align: left;
+        }
+        
+        ul {
+            text-decoration: none;
+        }
+        
+        ul li {
+            list-style-type: none;
+            color: rgb(210, 245, 12);
+            font-size: 25px;
+        }
+        
+        #discription {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-effect">
+        <span>S</span>
+        <span>Q</span>
+        <span>L</span>
+        <span>C</span>
+        <span>O</span>
+        <span>M</span>
+        <span>M</span>
+        <span>A</span>
+        <span>N</span>
+        <span>D</span>
+        <span>S</span>
+    </div>
+    <h1 class="heading">Data Defination Language</h1>
+    <ul>
+        <li>CREATE TABLE t</li>
+        <p id="discription">This sql command create a new table</p>
+        <li>DROP TABLE t</li>
+        <p id="discription">This sql command Remove a Table</p>
+        <li>ALTER TABLE t ADD col-name value</li>
+        <P id="discription">This Sql command add new column in table</P>
+        <li>ALTER TABLE t MODIFY col-name value</li>
+        <p id="discription">This sql command modify existing column</p>
+        <li>TRUNCATE TABLE t</li>
+        <p id="discription">This sql command remove all data from rows </p>
+    </ul>
+    <h1 class="heading">DATA MANUPLATION LANGUAGE</h1>
+    <ul>
+        <li>INSERT INTO t col-name VALUE </li>
+        <p id="discription">This sql command insert data in columns of table</p>
+        <li>UPDATE t SET col-name WHERE condition</li>
+        <p id="discription">This sql command update value in specific column with where condition (i,e usually it is primary key)</p>
+        <li>DELETE FROM t WHERE condition</li>
+        <p id="discription">This sql command delete column of table with condition (i,e usually it is primary key)</p>
+    </ul>
+    <h1 class="heading">DATA ACCESS</h1>
+    <ul>
+        <li>SELECT * FROM t</li>
+        <li>SELECT a FROM t </li>
+        <li>SELECT a,b FROM t WHERE condition</li>
+        <li>SELECT DISTINCT a FROM t WHERE condition</li>
+        <li>SELECT a,b FROM t ORDER BY ASC/DESC </li>
+        <li>SELECT a,b FROM t LIMIT numbers</li>
+        <li>SELECT TOP number FROM a,b</li>
+    </ul>
+</body>
+
+</html>
